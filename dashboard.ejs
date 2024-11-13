@@ -1,0 +1,30 @@
+<!-- dashboard.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/css/dashboard.css"> 
+</head>
+<body>
+    <% layout("/layouts/boilerplate.ejs") %>
+    <section id="dashboard" class="active">
+        <div class="container">
+            <h2>Admin Dashboard</h2>
+            <div class="card">
+                <h3>Total Users</h3>
+                <p>512</p>
+            </div>
+            <div class="card">
+                <h3>Active Energy Meters</h3>
+                <p>452</p>
+            </div>
+            <div class="card">
+                <h3>Alerts Pending</h3>
+                <p>14</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

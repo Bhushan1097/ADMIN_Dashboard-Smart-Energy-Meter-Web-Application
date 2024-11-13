@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/manage-users.css"> 
+</head>
+<body>
+
+    <% layout("/layouts/boilerplate.ejs") %>
+    <section id="manage-users">
+        <div class="container">
+            <h2>Manage Users</h2>
+            <!-- Search bar -->
+            <input type="text" id="userSearch" placeholder="Search for users..." onkeyup="searchTable('userSearch', 'userTable')">
+            <div class="card">
+                <table id="userTable">
+                    <thead>
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>User ID</th>
+                            <th>Last Reset</th>
+                            <th>Last Update</th>
+                            <th>Total Consumption (kWh)</th>
+                            <th>Remaining Balance</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>001</td>
+                            <td>08:00 AM</td>
+                            <td>10:00 PM</td>
+                            <td>120 kWh</td>
+                            <td>₹500</td>
+                            <td>Active</td>
+                            <td>
+                                <button class="btn-on">On</button>
+                                <button class="btn-off">Off</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>002</td>
+                            <td>07:00 AM</td>
+                            <td>09:00 PM</td>
+                            <td>100 kWh</td>
+                            <td>₹300</td>
+                            <td>Inactive</td>
+                            <td>
+                                <button class="btn-on">On</button>
+                                <button class="btn-off">Off</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

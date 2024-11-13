@@ -1,0 +1,59 @@
+/* Header Styling */
+header {
+    background-color: #28a745; /* Changed background color to green */
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgb(51, 171, 33); /* Changed navbar background color to green */
+    padding: 20px 0; /* Increase top and bottom padding */
+    width: 100%; /* Ensure the navbar covers the full width */
+    position: fixed; /* Make the navbar fixed at the top */
+    top: 0; /* Position it at the top */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure it stays above other content */
+    text-align: center; /* Center align the text */
+}
+
+.navbar .navbar-toggler {
+    border: none; /* Remove border from the toggle button */
+}
+
+.navbar .navbar-toggler-icon {
+    background-color: #fff; /* Set color for the toggle icon */
+}
+
+.navbar-nav {
+    margin: 0; /* Remove margin from the navbar items */
+}
+
+.navbar-nav .nav-item {
+    display: inline-block; /* Align nav items in a row */
+    margin: 0 20px; /* Add margin between nav items */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff; /* Set the text color for links */
+    font-size: 18px; /* Increase the font size */
+    padding: 15px 10px; /* Adjust padding for nav links */
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active {
+    color: #ff5722; /* Changed hover and active link color to orange */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar-collapse {
+    justify-content: center; /* Center the navbar items */
+}
+
+/* H1 Styles */
+h1 {
+    color: #fff; /* Set header text color */
+    font-size: 28px; /* Set header font size */
+    font-weight: bold; /* Make the header bold */
+    margin-bottom: 0; /* Remove margin below the header */
+}

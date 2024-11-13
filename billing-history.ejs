@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/billing-history.css"> 
+</head>
+<body>
+
+    <% layout("/layouts/boilerplate.ejs") %>
+    <section id="billing-history">
+        <div class="container">
+            <h2>Billing History</h2>
+            <!-- Search bar -->
+            <input type="text" id="billingSearch" placeholder="Search by User ID..." onkeyup="searchTable('billingSearch', 'billingTable')">
+            <div class="card">
+                <table id="billingTable">
+                    <thead>
+                        <tr>
+                            <th>Transaction ID</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TXN123456</td>
+                            <td>2024-08-01</td>
+                            <td>₹1500</td>
+                            <td>Paid</td>
+                        </tr>
+                        <tr>
+                            <td>TXN654321</td>
+                            <td>2024-07-01</td>
+                            <td>₹2000</td>
+                            <td>Paid</td>
+                        </tr>
+                        <tr>
+                            <td>TXN789012</td>
+                            <td>2024-06-01</td>
+                            <td>₹1800</td>
+                            <td>Unpaid</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
